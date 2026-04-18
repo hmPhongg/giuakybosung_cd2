@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// 📚 Data Model
+//  Data Model
 class Lesson {
   final String id;
   final String title;
@@ -59,7 +59,7 @@ class Lesson {
   });
 }
 
-// 🗂️ Mock Data
+//  Mock Data
 final List<Lesson> sampleLessons = [
   Lesson(
     id: '1', title: 'Daily Conversations', level: 'Beginner', duration: '45 mins',
@@ -83,7 +83,7 @@ final List<Lesson> sampleLessons = [
   ),
 ];
 
-// 📱 Trang Danh Sách Bài Học
+//  Trang Danh Sách Bài Học
 class LessonListScreen extends StatelessWidget {
   const LessonListScreen({super.key});
 
@@ -123,7 +123,7 @@ class LessonListScreen extends StatelessWidget {
   }
 }
 
-// 🃏 Card Hiển Thị Từng Bài Học - ✅ ĐÃ FIX LỖI ẢNH
+
 class _LessonCard extends StatelessWidget {
   final Lesson lesson;
   const _LessonCard({required this.lesson});
@@ -210,7 +210,7 @@ class _LessonCard extends StatelessWidget {
   }
 }
 
-// 📖 Trang Chi Tiết Bài Học - ✅ ĐÃ FIX SLIVERAPPBAR
+//  Trang Chi Tiết Bài Học 
 class LessonDetailScreen extends StatelessWidget {
   final Lesson lesson;
   const LessonDetailScreen({super.key, required this.lesson});
@@ -232,7 +232,7 @@ class LessonDetailScreen extends StatelessWidget {
               background: Stack(
                 fit: StackFit.expand,
                 children: [
-                  // ✅ Image.network với error handling
+                  //  Image.network với error handling
                   Image.network(
                     lesson.imageUrl,
                     fit: BoxFit.cover,
